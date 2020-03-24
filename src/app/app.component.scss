@@ -1,0 +1,112 @@
+#angular{
+    h2{
+        text-align: center;
+    }
+
+    .stock{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        .flavour{
+            width: 25%;
+            box-sizing: border-box;
+            border-radius: 5px;
+            padding: 5px;
+
+            .inner{
+                user-select: none;
+                border-radius: 5px;
+                background-color: #dbeaf7;
+                border: 2px solid transparent;
+                color: #0a59cf;
+                padding: 10px 5px;
+                cursor: pointer;
+
+                div{
+                    text-align: center;
+                }
+
+                .name{
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+
+                .price{
+                    font-size: 15px;
+                }
+
+                .amount{
+                    padding-top: 15px;
+                    color: grey;
+                }
+
+                &:hover{
+                    background: #0d60dd;
+                    color: white;
+                }
+
+                &:active{
+                    border: 2px solid #208cf1;
+                }
+
+                &.selected{
+                    background: #07a4af;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .sell-methods{
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .income{
+        text-align: center;
+        margin-top: 20px;
+        
+        span{
+            padding: 5px 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #292dec;
+        }
+    }
+
+    .restock{
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .btn-style-1{
+        padding: 7px 5px;
+        user-select: none;
+        box-shadow: none;
+        outline: none;
+        border: 1px solid #292dec;
+        background: #292dec;
+        border-radius: 5px;
+        color: white;
+        margin: 0 5px;
+
+        &:hover:not(:disabled){
+            cursor: pointer;
+            background: #101270;
+            border: 1px solid #101270;
+        }
+
+        &:active:not(:disabled){
+            cursor: pointer;
+            background: #020222;
+            border: 1px solid #020222;
+        }
+
+        &:disabled{
+            cursor: not-allowed;
+            background: #6e6e6e;
+            border: 1px solid #6e6e6e;
+        }
+    }
+}
